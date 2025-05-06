@@ -1019,17 +1019,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/agriculture]() |    `GET`    | Returns requested agricultural property      |
+| [/api/asset/agriculture/:id]() |    `GET`    | Returns requested agricultural property      |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -1580,6 +1571,371 @@
     }
 
 ```
+
+### Ornaments
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament]() |    `POST`    | Add new ornament       |
+
+ ### Request
+
+ #### Request Body
+
+```json
+    {
+    "name": "Gold",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "unit": 2,
+    "quantity": 3,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+```
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+>   ```json
+>   {
+>       "success": true,
+>       "redirectURL": "asset/ornament"
+> }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament]() |    `GET`    | List all ornaments        |
+
+> ### Request
+>
+> #### Request Body
+
+```json
+    {
+    
+    }
+```
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>       "ornament": [
+>           {
+>               "id": 123456789,
+>               "name": "Gold",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 50000,
+>               "unit": 2,
+>               "quantity": 3,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           },
+>           {
+>               "id": 123456788,
+>               "name": "Diamond",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 500000,
+>               "unit": 2,
+>               "quantity": 3,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           }
+>       ],
+> }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament/:id]() |    `GET`    | Returns requested ornament      |
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+>           {
+>               "id": 123456788,
+>               "name": "Diamond",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 500000,
+>               "unit": 2,
+>               "quantity": 3,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament]() |    `POST`    | Update ornament       |
+
+> ### Request
+>
+> #### Request Body
+```json
+    {
+    "name": "Gold",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "unit": 2,
+    "quantity": 3,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+```
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Ornament updated successfully",
+    "ornament":     {
+    "name": "Gold",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "unit": 2,
+    "quantity": 3,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+    }
+
+```
+
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament/sell]() |    `POST`    | Sell an ornament       |
+
+> ### Request
+>
+> #### Request Body
+
+```json
+    {
+    "id": 123456789,
+    "sellAmount": 60000,
+    "depositAccount": "Cash",
+    "bank_account": 4404001111111
+    }
+```
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Ornament sell recorded successfully",
+    "ornament": {
+    "id": 123456789,
+    "name": "Gold",
+    "costValue": 50000,
+    "sellAmount": 60000,
+    "depositAccount": "Cash",
+    "aquisitionType": "Inheritance",
+    }
+    }
+
+```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/ornament/:id]() |    `DELETE`    | Delete ornament       |
+
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Ornament deleted successfully"
+    }
+
+```
+
+---
+
+### Sanchaypatra
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/sanchaypatra]() |    `POST`    | Add new sanchaypatra       |
+
+ ### Request
+
+ #### Request Body
+
+```json
+    {
+    "name": "Family Sanchaypatra",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "bank_account": 440400111111,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+```
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+>   ```json
+>   {
+>       "success": true,
+>       "redirectURL": "asset/sanchaypatra"
+> }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/sanchaypatra]() |    `GET`    | List all sanchaypatra        |
+
+> ### Request
+>
+> #### Request Body
+
+```json
+    {
+    
+    }
+```
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>       "sanchaypatra": [
+>           {
+>               "id": 123456789,
+>               "name": "10 Year Sanchaypatra",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 50000,
+>               "bank_account": 440400111111,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           },
+>           {
+>               "id": 123456788,
+>               "name": "5 Year Sanchaypatra",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 500000,
+>               "bank_account": 440400111111,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           }
+>       ],
+> }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/sanchaypatra/:id]() |    `GET`    | Returns requested sanchaypatra      |
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+>           {
+>               "id": 123456788,
+>               "name": "5 Year Sanchaypatra",
+>               "aquisitionType": "Inheritance",
+>               "costValue": 500000,
+>               "bank_account": 440400111111,
+>               "date": "05-11-2024",
+>               "description": "demo"
+>           }
+> ```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/sanchaypatra]() |    `POST`    | Update sanchaypatra       |
+
+> ### Request
+>
+> #### Request Body
+```json
+    {
+    "name": "Gold",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "bank_account": 440400111111,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+```
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Sanchaypatra updated successfully",
+    "sanchaypatra":     {
+    "name": "5 Year Sanchaypatra",
+    "aquisitionType": "Inheritance",
+    "costValue": 50000,
+    "bank_account": 440400111111,
+    "date": "05-11-2024",
+    "description": "demo"
+    }
+    }
+
+```
+
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/asset/sanchaypatra/:id]() |    `DELETE`    | Delete sanchaypatra       |
+
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Sanchaypatra deleted successfully"
+    }
+
+```
+
 
 -----------
 
@@ -2139,6 +2495,41 @@
 ```json
     {
     "message": "Investment deleted successfully"
+    }
+
+```
+
+| API Endpoint         | HTTP Method | Description |
+| -------------------- | :---------: | :---------: |
+| [/api/investment/liquidate/:id]() |    `POST`    | Liquidate Investment       |
+
+> ### Request
+>
+> #### Request Body
+>```json
+>    {
+>    "amount": 50000,
+>    "bank_account": 4404001234567
+>    }
+>```
+
+ ### Response - Success
+
+ #### Response Code : 200 (`OK`)
+
+ #### Response Body
+
+```json
+    {
+    "message": "Investment liquidated successfully",
+    "investment": {
+    "id": 123456789,
+    "type": "Fixed Deposit",
+    "amount": 50000,
+    "bank_account": 4404001234567,
+    "transferred_amount": 10000,
+    "account_balance": 150000
+    }
     }
 
 ```
