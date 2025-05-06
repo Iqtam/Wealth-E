@@ -33,7 +33,6 @@
 >}
 >```
 >
-<br>
 
 >### Response - Success
 >
@@ -103,7 +102,7 @@
 >                        "Tax Zone 1", 
 >                        "Tax Zone 2",
 >                        "Tax Zone 15"
->                   ]
+>                 ]
 >}
 >```
 >
@@ -124,7 +123,6 @@
 >}
 >```
 >
-<br>
 
 >### Response
 >
@@ -171,16 +169,11 @@
 >           "isFF": false,
 >           "isFemale": true,
 >           "isDisabled": false               
->}
->    
->    
->    
+>       }  
 >}
 >```
 >
-<br>
 
-<br>
 
 >### Response - Success
 >
@@ -194,8 +187,7 @@
 >    "token": "1234cdb32"
 >}
 >```
->
-<br>
+
 
 >### Response - Invalid Input
 >
@@ -257,10 +249,7 @@
 >           "isFF": false,
 >           "isFemale": true,
 >           "isDisabled": false               
->}
->    
->    
->    
+>   }    
 >}
 >````
 >
@@ -297,9 +286,6 @@
 > }
 >```
 >
-<br>
-
-<br>
 
 >### Response - Success
 >
@@ -327,7 +313,7 @@
 >       "isFemale": true,
 >       "isDisabled": false
 >   }
-> }
+>   }
 > }
 >```
 >
@@ -415,17 +401,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/employment]() |    `GET`    | Returns requested employment income      |
+| [/api/income/employment/:id]() |    `GET`    | Returns requested employment income      |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -435,14 +412,12 @@
 >
 > ```json
 > {
->           {
->               "id": 123456789,
->               "employmentType": "Government Pay scale",
->               "incomeType": "Basic pay",
->               "amount": 50000,
->               "exemptedAmount": 4000,
->               "date": "05-11-2024"
->           }
+>         "id": 123456789,
+>         "employmentType": "Government Pay scale",
+>         "incomeType": "Basic pay",
+>         "amount": 50000,
+>         "exemptedAmount": 4000,
+>         "date": "05-11-2024"
 > }
 > ```
 
@@ -488,17 +463,7 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/employment]() |    `DELETE`    | Delete employment income       |
-
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
+| [/api/income/employment/:id]() |    `DELETE`    | Delete employment income with specific id     |
 
  ### Response - Success
 
@@ -589,17 +554,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/rent]() |    `GET`    | Returns requested employment income      |
+| [/api/income/rent/:id]() |    `GET`    | Returns requested rent income      |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -609,13 +565,11 @@
 >
 > ```json
 > {
->           {
 >               "id": 123456789,
 >               "incomeType": "Rental Income",
 >               "amount": 50000,
 >               "exemptedAmount": 4000,
 >               "date": "05-11-2024"
->           }
 > }
 > ```
 
@@ -659,17 +613,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/rent]() |    `DELETE`    | Delete rent income       |
+| [/api/income/rent/:id]() |    `DELETE`    | Delete rent income  with specific id     |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -761,17 +706,7 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/agriculture]() |    `GET`    | Returns requested agriculture income      |
-
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
+| [/api/income/agriculture/:id]() |    `GET`    | Returns requested agriculture income      |
 
 > ### Response - Success
 >
@@ -781,13 +716,11 @@
 >
 > ```json
 > {
->           {
 >               "id": 123456789,
 >               "incomeType": "Basic pay",
 >               "sellingPrice": 50000,
 >               "profit": 4000,
 >               "date": "05-11-2024"
->           }
 > }
 > ```
 
@@ -831,17 +764,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/income/agriculture]() |    `DELETE`    | Delete agriculture income       |
+| [/api/income/agriculture/:id]() |    `DELETE`    | Delete agriculture income       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -934,17 +858,7 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/expense]() |    `GET`    | Returns requested expense      |
-
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
+| [/api/expense/:id]() |    `GET`    | Returns requested expense      |
 
 > ### Response - Success
 >
@@ -954,13 +868,11 @@
 >
 > ```json
 > {
->           {
 >               "id": 123456789,
 >               "expenseType": "Government Pay scale",
 >               "description": "Basic pay",
 >               "amount": 50000,
 >               "date": "05-11-2024"
->           }
 > }
 > ```
 
@@ -1004,17 +916,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/expense]() |    `DELETE`    | Delete expense      |
+| [/api/expense/:id]() |    `DELETE`    | Delete expense      |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -1239,17 +1142,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/agriculture]() |    `DELETE`    | Delete agricultural property       |
+| [/api/asset/agriculture/:id]() |    `DELETE`    | Delete agricultural property       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -1347,17 +1241,7 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/non_agriculture]() |    `GET`    | Returns requested non-agricultural property      |
-
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
+| [/api/asset/non_agriculture/:id]() |    `GET`    | Returns requested non-agricultural property      |
 
 > ### Response - Success
 >
@@ -1367,7 +1251,6 @@
 >
 > ```json
 > {
->           {
 >               "id": 123456788,
 >               "name": "Plot",
 >               "costValue": 50000,
@@ -1375,7 +1258,6 @@
 >               "aquisitionType": "Inheritance",
 >               "date": "05-11-2024",
 >               "description": "demo"
->           }
 > }
 > ```
 
@@ -1470,17 +1352,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/non_agriculture]() |    `DELETE`    | Delete non-agricultural property       |
+| [/api/asset/non_agriculture/:id]() |    `DELETE`    | Delete non-agricultural property       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -1580,17 +1453,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/motor_vehicle]() |    `GET`    | Returns requested motor vehicle property      |
+| [/api/asset/motor_vehicle/:id]() |    `GET`    | Returns requested motor vehicle property      |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -1600,7 +1464,6 @@
 >
 > ```json
 > {
->           {
 >               "id": 123456789,
 >               "name": "Toyota",
 >               "type": "Car",
@@ -1609,7 +1472,6 @@
 >               "engine_capacity": "2000 cc",
 >               "date": "05-11-2024",
 >               "description": "demo"
->           }
 > }
 > ```
 
@@ -1704,17 +1566,7 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/asset/motor_vehicle]() |    `DELETE`    | Delete motor_vehicle property       |
-
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
+| [/api/asset/motor_vehicle/:id]() |    `DELETE`    | Delete motor_vehicle property       |
 
  ### Response - Success
 
@@ -1814,17 +1666,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/liability/bank_loan]() |    `GET`    | Returns requested bank loan     |
+| [/api/liability/bank_loan/:id]() |    `GET`    | Returns requested bank loan     |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -1923,17 +1766,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/liability/bank_loan]() |    `DELETE`    | Delete bank loan       |
+| [/api/liability/bank_loan/:id]() |    `DELETE`    | Delete bank loan       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -2031,17 +1865,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/liability/personal_loan]() |    `GET`    | Returns requested personal loan     |
+| [/api/liability/personal_loan/:id]() |    `GET`    | Returns requested personal loan     |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -2140,17 +1965,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/liability/personal_loan]() |    `DELETE`    | Delete personal loan       |
+| [/api/liability/personal_loan/:id]() |    `DELETE`    | Delete personal loan       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
@@ -2245,17 +2061,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/investment]() |    `GET`    | Returns requested Investment     |
+| [/api/investment/:id]() |    `GET`    | Returns requested Investment     |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
 > ### Response - Success
 >
@@ -2320,17 +2127,8 @@
 
 | API Endpoint         | HTTP Method | Description |
 | -------------------- | :---------: | :---------: |
-| [/api/investment]() |    `DELETE`    | Delete Investment       |
+| [/api/investment/:id]() |    `DELETE`    | Delete Investment       |
 
-> ### Request
->
-> #### Request Body
-
-```json
-    {
-    "id": 123456789
-    }
-```
 
  ### Response - Success
 
