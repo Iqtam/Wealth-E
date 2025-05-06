@@ -11,7 +11,7 @@
 ## Index
 
 - [Wealth-E API Documentation](#wealth-e-api-documentation)
-    - [ Group 6 (A1) ](#-group-6-a1-)
+  - [ Group 6 (A1) ](#-group-6-a1-)
   - [Index](#index)
   - [Modules](#modules)
   - [Register/Login Module](#registerlogin-module)
@@ -162,7 +162,12 @@
     - [Investment related APIs](#investment-related-apis)
     - [Get Total Income Overview](#get-total-income-overview)
     - [Get Tax Computation](#get-tax-computation)
-    - [Generate Return PDF Preview (Before Submission)](#generate-return-pdf-preview-before-submission)
+    - [Tax Payment APIs](#tax-payment-apis)
+    - [Initiate Payment](#initiate-payment)
+    - [Payment Success](#payment-success)
+    - [Payment Failure](#payment-failure)
+    - [Payment Cancellation](#payment-cancellation)
+    - [Payment Summary](#payment-summary)
     - [Finalize Submission](#finalize-submission)
     - [Download Finalized Return PDF](#download-finalized-return-pdf)
     - [Check Submission Status](#check-submission-status)
@@ -216,7 +221,7 @@
 > }
 > ```
 >
- </br>
+>  </br>
 
 > ### Response - Success
 >
@@ -284,9 +289,11 @@
 >   "taxZones": ["Tax Zone 1", "Tax Zone 2", "Tax Zone 15"]
 > }
 > ```
-</br>
+>
+> </br>
 
 ---
+
 ### Get Tax Circle List
 
 | API Endpoint            | HTTP Method |                            Description                            |
@@ -302,7 +309,8 @@
 >   "taxZone": "Tax Zone 2"
 > }
 > ```
-</br>
+>
+> </br>
 
 > ### Response
 >
@@ -315,7 +323,8 @@
 >   "taxCircles": ["Tax Circle 75", "Tax Circle 76", "Tax Circle 78"]
 > }
 > ```
-</br>
+>
+> </br>
 
 ---
 
@@ -382,7 +391,7 @@
 
 <br>
 
-----
+---
 
 ### Personal Info
 
@@ -399,8 +408,6 @@
 > ```
 >
 > <br>
-
-
 
 > ### Response - Success
 >
@@ -429,8 +436,7 @@
 > }
 > ```
 >
-> <br>
-> ----
+> ## <br>
 
 ### Update Personal Info
 
@@ -462,7 +468,8 @@
 >   }
 > }
 > ```
-</br>
+>
+> </br>
 
 > ### Response - Success
 >
@@ -506,19 +513,19 @@
 | -------------------------- | :---------: | :-----------------------: |
 | [/api/income/employment]() |   `POST`    | Add new employment income |
 
->### Request
+> ### Request
 >
->#### Request Body
+> #### Request Body
 >
->```json
->{
->  "employmentType": "Basic pay",
->  "incomeType": "Government Pay scale",
->  "amount": 50000,
->  "exemptedAmount": 4000,
->  "date": "05-11-2024"
->}
->```
+> ```json
+> {
+>   "employmentType": "Basic pay",
+>   "incomeType": "Government Pay scale",
+>   "amount": 50000,
+>   "exemptedAmount": 4000,
+>   "date": "05-11-2024"
+> }
+> ```
 
 </br>
 
@@ -535,8 +542,7 @@
 > }
 > ```
 
-</br>
----
+## </br>
 
 | API Endpoint               | HTTP Method |         Description         |
 | -------------------------- | :---------: | :-------------------------: |
@@ -581,7 +587,8 @@
 
 </br>
 
-----
+---
+
 | API Endpoint                   | HTTP Method |             Description             |
 | ------------------------------ | :---------: | :---------------------------------: |
 | [/api/income/employment/:id]() |    `GET`    | Returns requested employment income |
@@ -2817,9 +2824,9 @@
 | ----------------------------------------------- | :---------: | ------------------------------------------------------------------------------------------------------- |
 | [/tax/return/{taxReturnId}/employment-income]() |    `GET`    | Retrieve the previously submitted employment income — useful for pre-filling form fields during editing |
 
-> ## Request
+> ### Request
 >
-> ### Request Body
+> #### Request Body
 >
 > ```json
 > {}
@@ -3237,18 +3244,28 @@
 
 ---
 
-### Generate Return PDF Preview (Before Submission)
+### Tax Payment APIs
 
-| API Endpoint                                | HTTP Method | Description                                                       |
-| ------------------------------------------- | :---------: | ----------------------------------------------------------------- |
-| [/tax/return/{taxReturnId}/form/generate]() |   `POST`    | Generate a preview version of the tax return PDF (not finalized). |
+### Initiate Payment
+
+| API Endpoint              | HTTP Method | Description                                                      |
+| ------------------------- | :---------: | ---------------------------------------------------------------- |
+| [/tax/payment/initiate]() |   `POST`    | Prepare payment and redirect user to SSLCommerz sandbox gateway. |
 
 > ### Request
 >
 > #### Request Body
 >
 > ```json
-> {}
+> {
+>   "taxReturnId": "trn_2024_user123",
+>   "amount": 5000,
+>   "method": "sslcommerz"
+> }
+> ```
+
+> ```
+>
 > ```
 
 </br>
@@ -3261,9 +3278,157 @@
 >
 > ```json
 > {
->   "pdfUrl": "https://cdn.wealthe.dev/returns/previews/trn_2024_user123.pdf",
->   "status": "preview",
->   "generatedAt": "2024-05-06T14:00:00Z"
+>   "success": "True",
+>   "redirectUrl": "https://sandbox.sslcommerz.com/EasyCheckOut/test_abc123"
+> }
+> ```
+
+</br>
+
+---
+
+### Payment Success
+
+| API Endpoint             | HTTP Method | Description                                                                          |
+| ------------------------ | :---------: | ------------------------------------------------------------------------------------ |
+| [/tax/payment/success]() |   `POST`    | verify the payment using val_id, update database, and lock the associated tax return |
+
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "tran_id": "TRN_202405071210",
+>   "val_id": "2301234567891234567"
+> }
+> ```
+
+> ```
+>
+> ```
+
+</br>
+
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "success": "True",
+>   "message": "Payment verified",
+>   "transactionId": "TRN_202405071210",
+>   "status": "paid"
+> }
+> ```
+
+</br>
+
+---
+
+### Payment Failure
+
+| API Endpoint          | HTTP Method | Description                               |
+| --------------------- | :---------: | ----------------------------------------- |
+| [/tax/payment/fail]() |   `POST`    | record the transaction attempt as failed. |
+
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "tran_id": "TRN_202405071210"
+> }
+> ```
+
+</br>
+
+> ### Response - Failure
+>
+> #### Response Code : 400 (`Bad request`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Payment failed",
+>   "success": "False"
+> }
+> ```
+
+</br>
+
+---
+
+### Payment Cancellation
+
+| API Endpoint          | HTTP Method | Description                   |
+| --------------------- | :---------: | ----------------------------- |
+| [/tax/payment/fail]() |   `POST`    | when user cancels the payment |
+
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "tran_id": "TRN_202405071210"
+> }
+> ```
+
+</br>
+
+> ### Response
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Payment cancelled",
+>   "success": "True"
+> }
+> ```
+
+</br>
+
+---
+
+### Payment Summary
+
+| API Endpoint                                  | HTTP Method | Description                                                   |
+| --------------------------------------------- | :---------: | ------------------------------------------------------------- |
+| [/tax/return/{taxReturnId}/payment-summary]() |    `GET`    | check current payment status after SSLCommerz redirects back. |
+
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {}
+> ```
+
+</br>
+
+> ### Response
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "success": "True",
+>   "status": "paid",
+>   "method": "sslcommerz",
+>   "amount": 5000,
+>   "transactionId": "TRN_202405071210",
+>   "paidAt": "2024-05-07T12:20:00Z"
 > }
 > ```
 
