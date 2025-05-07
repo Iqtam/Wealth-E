@@ -24,133 +24,18 @@
     - [Update Personal Info](#update-personal-info)
   - [Income Module](#income-module)
     - [Employment Income](#employment-income)
-  - [](#)
-    - [Response - Success](#response---success)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok)
-      - [Response Body](#response-body)
-    - [Response - Success](#response---success-1)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-1)
-      - [Response Body](#response-body-1)
     - [Rental Income](#rental-income)
-    - [Response - Success](#response---success-2)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-2)
-      - [Response Body](#response-body-2)
-    - [Response - Success](#response---success-3)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-3)
-      - [Response Body](#response-body-3)
     - [Agricultural Income](#agricultural-income)
-    - [Request](#request)
-      - [Request Body](#request-body)
-    - [Response - Success](#response---success-4)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-4)
-      - [Response Body](#response-body-4)
-    - [Response - Success](#response---success-5)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-5)
-      - [Response Body](#response-body-5)
   - [Expense Module](#expense-module)
-    - [Request](#request-1)
-      - [Request Body](#request-body-1)
-    - [Response - Success](#response---success-6)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-6)
-      - [Response Body](#response-body-6)
-    - [Response - Success](#response---success-7)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-7)
-      - [Response Body](#response-body-7)
   - [Asset Module](#asset-module)
     - [Agricultural Property](#agricultural-property)
-    - [Request](#request-2)
-      - [Request Body](#request-body-2)
-    - [Response - Success](#response---success-8)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-8)
-      - [Response Body](#response-body-8)
-    - [Response - Success](#response---success-9)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-9)
-      - [Response Body](#response-body-9)
-    - [Response - Success](#response---success-10)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-10)
-      - [Response Body](#response-body-10)
-    - [Non-Agricultural Property](#non-agricultural-property)
-    - [Request](#request-3)
-      - [Request Body](#request-body-3)
-    - [Response - Success](#response---success-11)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-11)
-      - [Response Body](#response-body-11)
-    - [Response - Success](#response---success-12)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-12)
-      - [Response Body](#response-body-12)
-    - [Response - Success](#response---success-13)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-13)
-      - [Response Body](#response-body-13)
+    - [Non Agricultural Property](#non-agricultural-property)
     - [Motor Vehicle](#motor-vehicle)
-    - [Request](#request-4)
-      - [Request Body](#request-body-4)
-    - [Response - Success](#response---success-14)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-14)
-      - [Response Body](#response-body-14)
-    - [Response - Success](#response---success-15)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-15)
-      - [Response Body](#response-body-15)
-    - [Response - Success](#response---success-16)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-16)
-      - [Response Body](#response-body-16)
     - [Ornaments](#ornaments)
-    - [Request](#request-5)
-      - [Request Body](#request-body-5)
-    - [Response - Success](#response---success-17)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-17)
-      - [Response Body](#response-body-17)
-    - [Response - Success](#response---success-18)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-18)
-      - [Response Body](#response-body-18)
-    - [Response - Success](#response---success-19)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-19)
-      - [Response Body](#response-body-19)
     - [Sanchaypatra](#sanchaypatra)
-    - [Request](#request-6)
-      - [Request Body](#request-body-6)
-    - [Response - Success](#response---success-20)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-20)
-      - [Response Body](#response-body-20)
-    - [Response - Success](#response---success-21)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-21)
-      - [Response Body](#response-body-21)
   - [Liability Module](#liability-module)
     - [Bank Loan](#bank-loan)
-    - [Request](#request-7)
-      - [Request Body](#request-body-7)
-    - [Response - Success](#response---success-22)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-22)
-      - [Response Body](#response-body-22)
-    - [Response - Success](#response---success-23)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-23)
-      - [Response Body](#response-body-23)
-    - [Response - Success](#response---success-24)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-24)
-      - [Response Body](#response-body-24)
-    - [Personal Loan](#personal-loan)
-    - [Request](#request-8)
-      - [Request Body](#request-body-8)
-    - [Response - Success](#response---success-25)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-25)
-      - [Response Body](#response-body-25)
-    - [Response - Success](#response---success-26)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-26)
-      - [Response Body](#response-body-26)
-    - [Response - Success](#response---success-27)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-27)
-      - [Response Body](#response-body-27)
   - [Investment Module](#investment-module)
-    - [Request](#request-9)
-      - [Request Body](#request-body-9)
-    - [Response - Success](#response---success-28)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-28)
-      - [Response Body](#response-body-28)
-    - [Response - Success](#response---success-29)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-29)
-      - [Response Body](#response-body-29)
-    - [Response - Success](#response---success-30)
-      - [Response Code : 200 (`OK`)](#response-code--200-ok-30)
-      - [Response Body](#response-body-30)
   - [Tax Module](#tax-module)
     - [Tax estimation](#tax-estimation)
     - [Rebate Plans](#rebate-plans)
@@ -509,6 +394,8 @@
 
 ### Employment Income
 
+###
+
 | API Endpoint               | HTTP Method |        Description        |
 | -------------------------- | :---------: | :-----------------------: |
 | [/api/income/employment]() |   `POST`    | Add new employment income |
@@ -527,7 +414,7 @@
 > }
 > ```
 
-</br>
+> <br> 
 
 > ### Response - Success
 >
@@ -542,7 +429,6 @@
 > }
 > ```
 
-## </br>
 
 | API Endpoint               | HTTP Method |         Description         |
 | -------------------------- | :---------: | :-------------------------: |
@@ -551,10 +437,15 @@
 > ### Request
 >
 > #### Request Body
+>
+> ```json
+> {
+>
+> }
+> ```
+>
+>  </br>
 
-```json
-{}
-```
 
 > ### Response - Success
 >
@@ -593,6 +484,14 @@
 | ------------------------------ | :---------: | :---------------------------------: |
 | [/api/income/employment/:id]() |    `GET`    | Returns requested employment income |
 
+> ### Request
+>
+> #### Request Body
+> 
+> ```json
+> {}
+> ```
+
 > ### Response - Success
 >
 > #### Response Code : 200 (`OK`)
@@ -617,54 +516,62 @@
 > ### Request
 >
 > #### Request Body
+>
+> ```json
+> {
+>  "id": 123456789,
+>  "employmentType": "Government Pay scale",
+>  "incomeType": "Basic pay",
+>  "amount": 50000,
+>  "exemptedAmount": 4000,
+>  "date": "05-11-2024"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "employmentType": "Government Pay scale",
-  "incomeType": "Basic pay",
-  "amount": 50000,
-  "exemptedAmount": 4000,
-  "date": "05-11-2024"
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Employment income updated successfully",
-  "employment_income": {
-    "id": 123456789,
-    "employmentType": "Government Pay scale",
-    "incomeType": "Basic pay",
-    "amount": 52000,
-    "exemptedAmount": 4000,
-    "date": "2024-11-05"
-  }
-}
-```
+>```json
+>{
+>  "message": "Employment income updated successfully",
+>  "employment_income": {
+>    "id": 123456789,
+>    "employmentType": "Government Pay scale",
+>    "incomeType": "Basic pay",
+>    "amount": 52000,
+>    "exemptedAmount": 4000,
+>    "date": "2024-11-05"
+>  }
+>}
+>```
 
 | API Endpoint                   | HTTP Method |                Description                |
 | ------------------------------ | :---------: | :---------------------------------------: |
 | [/api/income/employment/:id]() |  `DELETE`   | Delete employment income with specific id |
 
-### Response - Success
+> ### Request
+>
+> #### Request Body
+> 
+> ```json
+> {}
+> ```
 
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Employment income deleted successfully"
-}
-```
-
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+>```json
+>{
+>  "message": "Employment income deleted successfully"
+>}
+>```
+>
 ---
 
 ### Rental Income
@@ -676,15 +583,15 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{
-  "incomeType": "Rent received",
-  "amount": 50000,
-  "allowable_deduction": 4000,
-  "date": "05-11-2024"
-}
-```
+>
+>```json
+>{
+>  "incomeType": "Rent received",
+>  "amount": 50000,
+>  "allowable_deduction": 4000,
+>  "date": "05-11-2024"
+>}
+>```
 
 > ### Response - Success
 >
@@ -706,10 +613,10 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
+>
+>```json
+>{}
+>```
 
 > ### Response - Success
 >
@@ -740,6 +647,18 @@
 | ------------------------ | :---------: | :---------------------------: |
 | [/api/income/rent/:id]() |    `GET`    | Returns requested rent income |
 
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>
+> }
+> ```
+>
+>  </br>
+
 > ### Response - Success
 >
 > #### Response Code : 200 (`OK`)
@@ -763,52 +682,64 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "incomeType": "Basic pay",
+>   "amount": 50000,
+>   "allowable_deduction": 4000,
+>   "date": "05-11-2024"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "incomeType": "Basic pay",
-  "amount": 50000,
-  "allowable_deduction": 4000,
-  "date": "05-11-2024"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Employment income updated successfully",
-  "rent_income": {
-    "id": 123456789,
-    "incomeType": "Government Pay scale",
-    "amount": 52000,
-    "allowable_deduction": 4000,
-    "date": "2024-11-05"
-  }
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Employment income updated successfully",
+>   "rent_income": {
+>     "id": 123456789,
+>     "incomeType": "Government Pay scale",
+>     "amount": 52000,
+>     "allowable_deduction": 4000,
+>     "date": "2024-11-05"
+>   }
+> }
+> ```
 
 | API Endpoint             | HTTP Method |             Description             |
 | ------------------------ | :---------: | :---------------------------------: |
 | [/api/income/rent/:id]() |  `DELETE`   | Delete rent income with specific id |
 
-### Response - Success
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>
+> }
+> ```
+>
+>  </br>
 
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Rent income deleted successfully"
-}
-```
-
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Rent income deleted successfully"
+> }
+> ```
+> 
 ---
 
 ### Agricultural Income
@@ -817,18 +748,18 @@
 | --------------------------- | :---------: | :------------------------: |
 | [/api/income/agriculture]() |   `POST`    | Add new agriculture income |
 
-### Request
-
-#### Request Body
-
-```json
-{
-  "incomeType": "Government Pay scale",
-  "sellingPrice": 50000,
-  "profit": 4000,
-  "date": "05-11-2024"
-}
-```
+> ### Request
+> 
+> #### Request Body
+>
+> ```json
+> {
+>   "incomeType": "Government Pay scale",
+>   "sellingPrice": 50000,
+>   "profit": 4000,
+>   "date": "05-11-2024"
+> }
+> ```
 
 > ### Response - Success
 >
@@ -850,10 +781,10 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
+> 
+> ```json
+> {}
+> ```
 
 > ### Response - Success
 >
@@ -909,51 +840,51 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "incomeType": "Basic pay",
+>   "sellingPrice": 50000,
+>   "profit": 4000,
+>   "date": "05-11-2024"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "incomeType": "Basic pay",
-  "sellingPrice": 50000,
-  "profit": 4000,
-  "date": "05-11-2024"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Agriculture income updated successfully",
-  "employment_income": {
-    "id": 123456789,
-    "incomeType": "Basic pay",
-    "sellingPrice": 52000,
-    "profit": 4000,
-    "date": "2024-11-05"
-  }
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Agriculture income updated successfully",
+>   "employment_income": {
+>     "id": 123456789,
+>     "incomeType": "Basic pay",
+>     "sellingPrice": 52000,
+>     "profit": 4000,
+>     "date": "2024-11-05"
+>   }
+> }
+> ```
 
 | API Endpoint                    | HTTP Method |        Description        |
 | ------------------------------- | :---------: | :-----------------------: |
 | [/api/income/agriculture/:id]() |  `DELETE`   | Delete agriculture income |
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Agriculture income deleted successfully"
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Agriculture income deleted successfully"
+> }
+> ```
 
 ---
 
@@ -963,19 +894,19 @@
 | ---------------- | :---------: | :-------------: |
 | [/api/expense]() |   `POST`    | Add expenditure |
 
-### Request
-
-#### Request Body
-
-```json
-{
-  "expenseType": "Basic pay",
-  "description": "Government Pay scale",
-  "amount": 50000,
-  "date": "05-11-2024"
-}
-```
-
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "expenseType": "Basic pay",
+>   "description": "Government Pay scale",
+>   "amount": 50000,
+>   "date": "05-11-2024"
+> }
+> ```
+> 
 > ### Response - Success
 >
 > #### Response Code : 200 (`OK`)
@@ -996,10 +927,10 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
+> 
+> ```json
+> {}
+> ```
 
 > ### Response - Success
 >
@@ -1055,52 +986,52 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "expenseType": "Government Pay scale",
+>   "description": "Basic pay",
+>   "amount": 50000,
+>   "date": "05-11-2024"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "expenseType": "Government Pay scale",
-  "description": "Basic pay",
-  "amount": 50000,
-  "date": "05-11-2024"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Expense updated successfully",
-  "expenses": {
-    "id": 123456789,
-    "expenseType": "Government Pay scale",
-    "description": "Basic pay",
-    "amount": 50000,
-    "date": "05-11-2024"
-  }
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Expense updated successfully",
+>   "expenses": {
+>     "id": 123456789,
+>     "expenseType": "Government Pay scale",
+>     "description": "Basic pay",
+>     "amount": 50000,
+>     "date": "05-11-2024"
+>   }
+> }
+> ```
 
 | API Endpoint         | HTTP Method |  Description   |
 | -------------------- | :---------: | :------------: |
 | [/api/expense/:id]() |  `DELETE`   | Delete expense |
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Expense deleted successfully"
-}
-```
-
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Expense deleted successfully"
+> }
+> ```
+> 
 ---
 
 ---
@@ -1113,20 +1044,20 @@
 | -------------------------- | :---------: | :---------------------------: |
 | [/api/asset/agriculture]() |   `POST`    | Add new agricultural property |
 
-### Request
-
-#### Request Body
-
-```json
-{
-  "name": "Farm",
-  "costValue": 50000,
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "name": "Farm",
+>   "costValue": 50000,
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
 > ### Response - Success
 >
@@ -1148,11 +1079,11 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
-
+> 
+> ```json
+> {}
+> ```
+> 
 > ### Response - Success
 >
 > #### Response Code : 200 (`OK`)
@@ -1188,6 +1119,14 @@
 | ------------------------------ | :---------: | :-------------------------------------: |
 | [/api/asset/agriculture/:id]() |    `GET`    | Returns requested agricultural property |
 
+> ### Request
+>
+> #### Request Body
+> 
+> ```json
+> {}
+> ```
+
 > ### Response - Success
 >
 > #### Response Code : 200 (`OK`)
@@ -1195,7 +1134,6 @@
 > #### Response Body
 >
 > ```json
-> {
 >           {
 >               "id": 123456788,
 >               "name": "Pond",
@@ -1205,7 +1143,6 @@
 >               "date": "05-11-2024",
 >               "description": "demo"
 >           }
-> }
 > ```
 
 | API Endpoint               | HTTP Method |         Description          |
@@ -1215,39 +1152,39 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "name": "Pond",
+>   "costValue": 50000,
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "name": "Pond",
-  "costValue": 50000,
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Agricultural property updated successfully",
-  "agricultural_property": {
-    "id": 123456789,
-    "name": "Pond",
-    "costValue": 50000,
-    "location": "Mirpur",
-    "aquisitionType": "Inheritance",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Agricultural property updated successfully",
+>   "agricultural_property": {
+>     "id": 123456789,
+>     "name": "Pond",
+>     "costValue": 50000,
+>     "location": "Mirpur",
+>     "aquisitionType": "Inheritance",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                    | HTTP Method |          Description          |
 | ------------------------------- | :---------: | :---------------------------: |
@@ -1256,82 +1193,82 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "name": "Pond",
+>   "costValue": 50000,
+>   "sellAmount": 60000,
+>   "depositAccount": "Cash",
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "name": "Pond",
-  "costValue": 50000,
-  "sellAmount": 60000,
-  "depositAccount": "Cash",
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Agricultural property sell recorded successfully",
-  "agricultural_property": {
-    "id": 123456789,
-    "name": "Pond",
-    "costValue": 50000,
-    "sellAmount": 60000,
-    "depositAccount": "Cash",
-    "location": "Mirpur",
-    "aquisitionType": "Inheritance",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Agricultural property sell recorded successfully",
+>   "agricultural_property": {
+>     "id": 123456789,
+>     "name": "Pond",
+>     "costValue": 50000,
+>     "sellAmount": 60000,
+>     "depositAccount": "Cash",
+>     "location": "Mirpur",
+>     "aquisitionType": "Inheritance",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                   | HTTP Method |         Description          |
 | ------------------------------ | :---------: | :--------------------------: |
 | [/api/asset/agriculture/:id]() |  `DELETE`   | Delete agricultural property |
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Agricultural property deleted successfully"
-}
-```
-
+> ### Response - Success
+>
+> #### Response Code : 200 (`OK`)
+>
+> #### Response Body
+>
+> ```json
+> {
+>   "message": "Agricultural property deleted successfully"
+> }
+> ```
+> 
 ---
 
-### Non-Agricultural Property
+### Non Agricultural Property
 
 | API Endpoint                   | HTTP Method |          Description          |
 | ------------------------------ | :---------: | :---------------------------: |
 | [/api/asset/non_agriculture]() |   `POST`    | Add non-agricultural property |
 
-### Request
-
-#### Request Body
-
-```json
-{
-  "name": "Plot",
-  "costValue": 50000,
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
+> ### Request
+>
+> #### Request Body
+>
+> ```json
+> {
+>   "name": "Plot",
+>   "costValue": 50000,
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
 > ### Response - Success
 >
@@ -1353,10 +1290,10 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
+> 
+> ```json
+> {}
+> ```
 
 > ### Response - Success
 >
@@ -1418,39 +1355,39 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "name": "Plot",
+>   "costValue": 50000,
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "name": "Plot",
-  "costValue": 50000,
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Non-Agricultural property updated successfully",
-  "non_agricultural_property": {
-    "id": 123456789,
-    "name": "Plot",
-    "costValue": 50000,
-    "location": "Mirpur",
-    "aquisitionType": "Inheritance",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Non-Agricultural property updated successfully",
+>   "non_agricultural_property": {
+>     "id": 123456789,
+>     "name": "Plot",
+>     "costValue": 50000,
+>     "location": "Mirpur",
+>     "aquisitionType": "Inheritance",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                        | HTTP Method |            Description            |
 | ----------------------------------- | :---------: | :-------------------------------: |
@@ -1459,60 +1396,60 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "name": "Plot",
+>   "costValue": 50000,
+>   "sellAmount": 60000,
+>   "depositAccount": "Cash",
+>   "location": "Mirpur",
+>   "aquisitionType": "Inheritance",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "name": "Plot",
-  "costValue": 50000,
-  "sellAmount": 60000,
-  "depositAccount": "Cash",
-  "location": "Mirpur",
-  "aquisitionType": "Inheritance",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Non-Agricultural property sell recorded successfully",
-  "agricultural_property": {
-    "id": 123456789,
-    "name": "Plot",
-    "costValue": 50000,
-    "sellAmount": 60000,
-    "depositAccount": "Cash",
-    "location": "Mirpur",
-    "aquisitionType": "Inheritance",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Non-Agricultural property sell recorded successfully",
+>   "agricultural_property": {
+>     "id": 123456789,
+>     "name": "Plot",
+>     "costValue": 50000,
+>     "sellAmount": 60000,
+>     "depositAccount": "Cash",
+>     "location": "Mirpur",
+>     "aquisitionType": "Inheritance",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                       | HTTP Method |           Description            |
 | ---------------------------------- | :---------: | :------------------------------: |
 | [/api/asset/non_agriculture/:id]() |  `DELETE`   | Delete non-agricultural property |
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Non-Agricultural property deleted successfully"
-}
-```
-
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Non-Agricultural property deleted successfully"
+> }
+> ```
+> 
 ---
 
 ### Motor Vehicle
@@ -1521,21 +1458,21 @@
 | ---------------------------- | :---------: | :---------------: |
 | [/api/asset/motor_vehicle]() |   `POST`    | Add momor vehicle |
 
-### Request
-
-#### Request Body
-
-```json
-{
-  "name": "Toyota",
-  "type": "Car",
-  "costValue": 50000,
-  "reg_number": "Ka-12345",
-  "engine_capacity": "2000 cc",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
+> ### Request
+> 
+> #### Request Body
+> 
+> ```json
+> {
+>   "name": "Toyota",
+>   "type": "Car",
+>   "costValue": 50000,
+>   "reg_number": "Ka-12345",
+>   "engine_capacity": "2000 cc",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
 > ### Response - Success
 >
@@ -1557,10 +1494,10 @@
 > ### Request
 >
 > #### Request Body
-
-```json
-{}
-```
+> 
+> ```json
+> {}
+> ```
 
 > ### Response - Success
 >
@@ -1625,39 +1562,39 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "name": "Toyota",
+>   "type": "Car",
+>   "costValue": 50000,
+>   "reg_number": "Ka-12345",
+>   "engine_capacity": "2000 cc",
+>   "date": "05-11-2024",
+>   "description": "demo"
+> }
+> ```
 
-```json
-{
-  "name": "Toyota",
-  "type": "Car",
-  "costValue": 50000,
-  "reg_number": "Ka-12345",
-  "engine_capacity": "2000 cc",
-  "date": "05-11-2024",
-  "description": "demo"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Motor vehicles property updated successfully",
-  "motor_vehicles": {
-    "name": "Toyota",
-    "type": "Car",
-    "costValue": 50000,
-    "reg_number": "Ka-12345",
-    "engine_capacity": "2000 cc",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Motor vehicles property updated successfully",
+>   "motor_vehicles": {
+>     "name": "Toyota",
+>     "type": "Car",
+>     "costValue": 50000,
+>     "reg_number": "Ka-12345",
+>     "engine_capacity": "2000 cc",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                      | HTTP Method |            Description            |
 | --------------------------------- | :---------: | :-------------------------------: |
@@ -1666,59 +1603,59 @@
 > ### Request
 >
 > #### Request Body
+> 
+> ```json
+> {
+>   "id": 123456789,
+>   "name": "Toyota",
+>   "type": "Car",
+>   "costValue": 50000,
+>   "sellAmount": 60000,
+>   "depositAccount": "Cash",
+>   "reg_number": "Ka-12345",
+>   "engine_capacity": "2000 cc",
+>   "date": "05-11-2024"
+> }
+> ```
 
-```json
-{
-  "id": 123456789,
-  "name": "Toyota",
-  "type": "Car",
-  "costValue": 50000,
-  "sellAmount": 60000,
-  "depositAccount": "Cash",
-  "reg_number": "Ka-12345",
-  "engine_capacity": "2000 cc",
-  "date": "05-11-2024"
-}
-```
-
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Motor vehicle property sell recorded successfully",
-  "motor_vehicles": {
-    "id": 123456789,
-    "name": "Plot",
-    "costValue": 50000,
-    "sellAmount": 60000,
-    "depositAccount": "Cash",
-    "location": "Mirpur",
-    "aquisitionType": "Inheritance",
-    "date": "05-11-2024",
-    "description": "demo"
-  }
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Motor vehicle property sell recorded successfully",
+>   "motor_vehicles": {
+>     "id": 123456789,
+>     "name": "Plot",
+>     "costValue": 50000,
+>     "sellAmount": 60000,
+>     "depositAccount": "Cash",
+>     "location": "Mirpur",
+>     "aquisitionType": "Inheritance",
+>     "date": "05-11-2024",
+>     "description": "demo"
+>   }
+> }
+> ```
 
 | API Endpoint                     | HTTP Method |          Description          |
 | -------------------------------- | :---------: | :---------------------------: |
 | [/api/asset/motor_vehicle/:id]() |  `DELETE`   | Delete motor_vehicle property |
 
-### Response - Success
-
-#### Response Code : 200 (`OK`)
-
-#### Response Body
-
-```json
-{
-  "message": "Motor_vehicle property deleted successfully"
-}
-```
+> ### Response - Success
+> 
+> #### Response Code : 200 (`OK`)
+> 
+> #### Response Body
+> 
+> ```json
+> {
+>   "message": "Motor_vehicle property deleted successfully"
+> }
+> ```
 
 ### Ornaments
 
